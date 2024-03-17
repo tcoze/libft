@@ -6,7 +6,7 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 19:04:58 by tcoze             #+#    #+#             */
-/*   Updated: 2024/03/17 18:14:52 by tcoze            ###   ########.fr       */
+/*   Updated: 2024/03/17 22:38:35 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,13 @@ char	*get_next_line(int fd)
 	if (!out)
 		return (NULL);
 	if (ft_strchr_gnl(out, '\n') != -1)
-		return (/*printf("%s", out),*/ out);
+		return (out);
 	out = ft_read_and_fill(fd, out, buff, value_read);
 	if (!out)
 		return (NULL);
 	if (*out)
-		return (/*printf("%s", out), */out);
-	return (NULL);
+		return (out);
+	return (free(out), NULL);
 }
 
 static char	*ft_str_separate(char *out, char *buff, int buffer_pb)
