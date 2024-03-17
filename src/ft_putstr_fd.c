@@ -6,11 +6,10 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 00:34:43 by tcoze             #+#    #+#             */
-/*   Updated: 2024/03/17 17:35:50 by tcoze            ###   ########.fr       */
+/*   Updated: 2024/03/17 18:13:53 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
 #include "libft.h"
 
 int	ft_putstr_fd(char *s, int fd)

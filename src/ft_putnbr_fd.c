@@ -6,11 +6,10 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 00:41:41 by tcoze             #+#    #+#             */
-/*   Updated: 2024/03/17 17:35:38 by tcoze            ###   ########.fr       */
+/*   Updated: 2024/03/17 18:13:50 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
 #include "libft.h"
 
 int	ft_putnbr_fd(unsigned int nb2, int fd, int i)

@@ -6,11 +6,11 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 16:47:27 by tcoze             #+#    #+#             */
-/*   Updated: 2023/11/14 03:48:44 by tcoze            ###   ########.fr       */
+/*   Updated: 2024/03/17 18:13:30 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

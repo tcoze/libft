@@ -6,11 +6,10 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 22:42:50 by tcoze             #+#    #+#             */
-/*   Updated: 2023/11/14 03:56:25 by tcoze            ###   ########.fr       */
+/*   Updated: 2024/03/17 18:12:48 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)

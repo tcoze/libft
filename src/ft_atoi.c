@@ -6,11 +6,11 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 22:34:32 by tcoze             #+#    #+#             */
-/*   Updated: 2023/11/15 21:25:43 by tcoze            ###   ########.fr       */
+/*   Updated: 2024/03/17 18:12:43 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 static int	ft_checksign(char c);
 

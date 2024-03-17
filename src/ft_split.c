@@ -6,12 +6,11 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 18:37:30 by tcoze             #+#    #+#             */
-/*   Updated: 2023/11/14 03:51:48 by tcoze            ###   ########.fr       */
+/*   Updated: 2024/03/17 18:13:56 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static void	ft_freeall(char **out, size_t j);
 static int	ft_checknextcset(const char *s, char c);

@@ -6,12 +6,11 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 00:56:40 by tcoze             #+#    #+#             */
-/*   Updated: 2023/11/14 03:57:55 by tcoze            ###   ########.fr       */
+/*   Updated: 2024/03/17 18:14:03 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strdup(const char *s)
 {

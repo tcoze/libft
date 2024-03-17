@@ -6,11 +6,11 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 19:15:56 by tcoze             #+#    #+#             */
-/*   Updated: 2023/11/14 03:39:33 by tcoze            ###   ########.fr       */
+/*   Updated: 2024/03/17 18:14:00 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

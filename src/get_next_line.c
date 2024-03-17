@@ -6,12 +6,11 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 19:04:58 by tcoze             #+#    #+#             */
-/*   Updated: 2024/03/12 21:04:05 by tcoze            ###   ########.fr       */
+/*   Updated: 2024/03/17 18:14:52 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
-#include <stdio.h>
+#include "libft.h"
 
 char		*get_next_line(int fd);
 static char	*ft_str_separate(char *out, char *buff, int buffer_pb);
