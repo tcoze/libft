@@ -6,7 +6,7 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 04:14:00 by tcoze             #+#    #+#             */
-/*   Updated: 2023/12/13 10:02:16 by tcoze            ###   ########.fr       */
+/*   Updated: 2024/03/17 17:28:07 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,17 @@ static int	ft_check_and_print(const char *str, va_list arg, int fd)
 	int	a;
 
 	if (*str == '%')
-		a = ft_putchar_fd('%', fd);
+		a = ft_putchar_printf_fd('%', fd);
 	if (*str == 'c')
-		a = ft_putchar_fd(va_arg(arg, int), fd);
+		a = ft_putchar_printf_fd(va_arg(arg, int), fd);
 	if (*str == 's')
-		a = ft_putstr_fd(va_arg(arg, char *), fd);
+		a = ft_putstr_printf_fd(va_arg(arg, char *), fd);
 	if (*str == 'p')
 		a = ft_c_a(va_arg(arg, unsigned long long), "0123456789abcdef", 1, fd);
 	if (*str == 'd' || *str == 'i')
 		a = ft_putnbr_b(va_arg(arg, int), "0123456789", 1, fd);
 	if (*str == 'u')
-		a = ft_putnbr_fd(va_arg(arg, unsigned int), fd, 1);
+		a = ft_putnbr_printf_fd(va_arg(arg, unsigned int), fd, 1);
 	if (*str == 'x')
 		a = ft_putnbr_b(va_arg(arg, unsigned int), "0123456789abcdef", 1, fd);
 	if (*str == 'X')
@@ -52,7 +52,7 @@ int	ft_printf(int fd, const char *str, ...)
 	while (*str)
 	{
 		if (*str != '%')
-			return_print_value = ft_putchar_fd(*str, fd);
+			return_print_value = ft_putchar_printf_fd(*str, fd);
 		else if (*(str + 1) && *str == '%')
 			return_print_value = ft_check_and_print(++str, args, fd);
 		else if (!*(str + 1) && *str == '%')

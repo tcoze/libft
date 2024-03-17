@@ -6,13 +6,13 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 00:32:32 by tcoze             #+#    #+#             */
-/*   Updated: 2023/11/14 03:49:16 by tcoze            ###   ########.fr       */
+/*   Updated: 2023/12/04 21:03:35 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "ft_printf.h"
 
-void	ft_putchar_fd(char c, int fd)
+int	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1);
+	return (write(fd, &c, 1));
 }

@@ -6,32 +6,23 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 00:41:41 by tcoze             #+#    #+#             */
-/*   Updated: 2023/11/14 00:47:02 by tcoze            ###   ########.fr       */
+/*   Updated: 2024/03/17 17:35:38 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
 #include "libft.h"
 
-void	ft_putnbr_fd(int nb, int fd)
+int	ft_putnbr_fd(unsigned int nb2, int fd, int i)
 {
-	if (nb >= -9 && nb <= 9)
-	{
-		if (nb < 0)
-		{
-			ft_putchar_fd('-', fd);
-			nb = -nb;
-		}
-		ft_putchar_fd(nb + '0', fd);
-	}
-	else if (nb < 0)
-	{
-		ft_putchar_fd('-', fd);
-		ft_putnbr_fd(-(nb / 10), fd);
-		ft_putchar_fd(-(nb % 10) + '0', fd);
-	}
-	else
-	{
-		ft_putnbr_fd(nb / 10, fd);
-		ft_putchar_fd(nb % 10 + '0', fd);
-	}
+	int		return_value_print;
+	long	nb;
+
+	nb = nb2;
+	if (nb > 9)
+		i = ft_putnbr_fd(nb / 10, fd, ++i);
+	return_value_print = ft_putchar_fd(nb % 10 + '0', 1);
+	if (return_value_print == -1)
+		return (-1);
+	return (i);
 }

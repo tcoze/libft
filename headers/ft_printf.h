@@ -6,7 +6,7 @@
 /*   By: tcoze <tcoze@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/26 18:58:21 by tcoze             #+#    #+#             */
-/*   Updated: 2024/02/24 00:05:38 by tcoze            ###   ########.fr       */
+/*   Updated: 2024/03/17 17:24:51 by tcoze            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 # include <stdarg.h>
 
 int		ft_printf(int fd, const char *str, ...);
-int		ft_putchar_fd(char c, int fd);
-int		ft_putstr_fd(char *s, int fd);
+int		ft_putchar_printf_fd(char c, int fd);
+int		ft_putstr_printf_fd(char *s, int fd);
 size_t	ft_strlen(const char *s);
 int		ft_putnbr_fd(unsigned int nb2, int fd, int i);
 int		ft_putnbr_b(long long nbr, char *base, int i, int fd);

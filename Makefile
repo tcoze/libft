@@ -51,7 +51,7 @@ SRC = 		ft_atoi.c \
 			ft_lstdelone_bonus.c \
 			ft_lstclear_bonus.c \
 			ft_lstiter_bonus.c \
-			ft_lstmap_bonus.c
+			ft_lstmap_bonus.c \
 
 
 OBJ = $(addprefix $(OBJ_PATH), $(SRC:.c=.o))
@@ -69,7 +69,7 @@ re : fclean all
 .PHONY: clean fclean re all bonus
 
 $(OBJ_PATH)%.o: $(SRC_PATH)%.c
-	$(CC) $(CFLAGS) -I ft_printf -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(OBJ_PATH):
 	mkdir $(OBJ_PATH)
